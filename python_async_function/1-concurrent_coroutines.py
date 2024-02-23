@@ -1,20 +1,20 @@
 #!/usr/bin/env python3
-"""python Asynchronous"""
+"""Python asíncrono."""
 
 from typing import List
 
 wait_random = __import__('0-basic_async_syntax').wait_random
 
 
-async def wait_n(n: int, max_delay: int) -> list[float]:
-    """Asynchronous coroutine that spawns wait_random n
+async def wait_n(n: int, max_delay: int) -> List[float]:
+    """Lamzamos varias tareas en paralelo.
 
         Args:
-            n (int): Number of times to spawn wait_random.
-            max_delay (int): The maximum delay in seconds.
+            n (int): Las veces que debe ejecutar la tarea.
+            max_delay (int): Límite superior para random.
 
-        Return:
-            List[float]: List of delays in ascending order.
+        Returns:
+            List[float]: Una lista con tiempo de espera.
     """
     temp_list = []
     for _ in range(n):
