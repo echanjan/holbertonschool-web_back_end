@@ -1,0 +1,3 @@
+//Script que cree o utilice la base de datos
+
+use my_db
