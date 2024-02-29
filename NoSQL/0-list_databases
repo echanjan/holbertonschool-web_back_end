@@ -1,0 +1,3 @@
+//Script que enumere todas las bases de datos
+
+show dbs
