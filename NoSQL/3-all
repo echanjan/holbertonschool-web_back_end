@@ -1,0 +1,3 @@
+// Script que enumera todos los documentos de school
+
+db.school.find()
