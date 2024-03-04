@@ -1,17 +1,16 @@
 #!/usr/bin/env python3
-"""Inserta un nuevo doc python."""
+"""Inserta un nuevo documento en Python."""
 
 
 def insert_school(mongo_collection, **kwargs):
     """
-    Inserta un nuevo documento en una colección
+    Inserta un nuevo documento en una colección.
 
     Args:
-        mongo_colecttion(Colecttion): Colección
+        mongo_collection(Collection): Colección de MongoDB.
 
-    Returns:
-        str_id generado para ese documento
+    Retunrs:
+        str: _id generado para ese documencto.
     """
-
-    id = mongo_collection.insert_one(kwargs).inserted.id
+    id = mongo_collection.insert_one(kwargs).inserted_id
     return id
