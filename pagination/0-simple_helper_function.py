@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+"""Paginación simple."""
+
 
 def index_range(page, page_size):
     """
@@ -14,9 +16,9 @@ def index_range(page, page_size):
     """
     # Calcula el índice de inicio
     start_index = (page - 1) * page_size
-    
+
     # Calcula el índice final
-    end_index = start_index + page_size - 1
-    
+    end_index = start_index + page_size
+
     # Devuelve una tupla que contiene el índice de inicio y el índice final
     return (start_index, end_index)
