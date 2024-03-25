@@ -9,10 +9,10 @@ class Currency {
   }
 
   set code(value) {
-    if (typeof value !== "string") {
-      throw new Error("Deben ser cadenas");
+    if (typeof value !== 'string') {
+      throw new Error('Deben ser cadenas');
     }
-    this._code;
+    return this._code;
   }
 
   get name() {
@@ -20,9 +20,10 @@ class Currency {
   }
 
   set name(value) {
-    if (typeof value !== "string") {
-      throw new Error("Deben ser cadenas");
+    if (typeof value !== 'string') {
+      throw new Error('Deben ser cadenas');
     }
+    return this._name;
   }
 
   displayFullCurrency() {

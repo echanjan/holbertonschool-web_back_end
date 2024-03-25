@@ -1,4 +1,4 @@
-import Currency from "./3-currency.js";
+import Currency from './3-currency';
 
 class Pricing {
   constructor(amount, currency) {
@@ -11,8 +11,8 @@ class Pricing {
   }
 
   set amount(value) {
-    if (typeof value !== "number") {
-      throw new Error("La cantidad debe ser un número");
+    if (typeof value !== 'number') {
+      throw new Error('La cantidad debe ser un número');
     }
     this._amount = value;
   }
@@ -23,18 +23,18 @@ class Pricing {
 
   set currency(value) {
     if (!(value instanceof Currency)) {
-      throw new Error("La moneda debe ser una instancia de Currency");
+      throw new Error('La moneda debe ser una instancia de Currency');
     }
     this._currency = value;
   }
 
   displayFullPrice() {
-    return '${this._amount} ${this._currency.name} (${this._currency.code})';
+    return `${this._amount} ${this._currency.name} (${this._currency.code})`;
   }
 
   static convertPrice(amount, conversionRate) {
-    if (typeof amount !== "number" || typeof conversionRate !== "number") {
-        throw new Error("La cantidad y la tasa de conversión deben ser números");
+    if (typeof amount !== 'number' || typeof conversionRate !== 'number') {
+      throw new Error('La cantidad y la tasa de conversión deben ser números');
     }
     return amount * conversionRate;
   }
