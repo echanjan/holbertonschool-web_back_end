@@ -1,10 +1,11 @@
+/* eslint-disable */
 export default function taskBlock(trueOrFalse) {
-  let task = false; // Cambiado de var a let
-  let task2 = true; // Cambiado de var a let
+  const task = false;
+  const task2 = true;
 
   if (trueOrFalse) {
-    task = false; // No se necesita declarar nuevamente con let o const
-    task2 = true; // No se necesita declarar nuevamente con let o const
+    const task = true;
+    const task2 = false;
   }
 
   return [task, task2];
