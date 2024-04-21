@@ -1,8 +1,8 @@
 export default function getListStudents() {
   const matriz = [
-    ['Guillaume", 1, "San Francisco'],
-    ['James", 2, "Columbia'],
-    ['Serena", 5, "San Francisco'],
+    ['Guillaume', 1, 'San Francisco'],
+    ['James', 2, 'Columbia'],
+    ['Serena', 5, 'San Francisco'],
   ];
 
   const result = matriz.map((item) => {
