@@ -5,12 +5,10 @@ export default function getListStudents() {
     ['Serena', 5, 'San Francisco'],
   ];
 
-  const result = matriz.map((item) => {
-    return {
-      id: item[1],
-      firstname: item[0],
-      location: item[2],
-    };
-  });
+  const result = matriz.map((item) => ({
+    id: item[1],
+    firstname: item[0],
+    location: item[2],
+  }));
   return result;
 }
