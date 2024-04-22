@@ -1,10 +1,7 @@
 export default function getStudentIdsSum(listStudents) {
-  let list = null;
+  let temp = null;
   if (Array.isArray(listStudents)) {
-    list = listStudents.reduce(
-      (accumulator, student) => accumulator + student.id,
-      0
-    );
+    temp = listStudents.reduce((acumulator, student) => acumulator + student.id, 0);
   }
-  return list;
+  return temp;
 }
